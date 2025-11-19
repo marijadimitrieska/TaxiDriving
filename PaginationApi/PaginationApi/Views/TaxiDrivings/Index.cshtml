@@ -1,0 +1,230 @@
+﻿@model List<PaginationApi.Models.TaxiDrivings>
+
+<form method="get" class="mb-3">
+    <label>Page Size:</label>
+    <select name="pageSize" onchange="this.form.submit()">
+        @{
+            int selectedPageSize = ViewBag.PageSize ?? 10;
+        }
+
+        <option value="10" selected=@(selectedPageSize == 10)>10</option>
+        <option value="20" selected=@(selectedPageSize == 20)>20</option>
+        <option value="50" selected=@(selectedPageSize == 50)>50</option>
+        <option value="100" selected=@(selectedPageSize == 100)>100</option>
+        <option value="200" selected=@(selectedPageSize == 200)>200</option>
+    </select>
+
+    <input type="hidden" name="page" value="@ViewBag.CurrentPage"/>
+
+    <div style="text-align:right; margin-bottom:10px;">
+    Total Records: @ViewBag.TotalRecords
+</div>
+</form>
+
+<form method="get" class="mb-3">
+    <input type="text" name="searchString" 
+        value="@Context.Request.Query["searchString"]"
+        placeholder="Search across all fields..." />
+        <input type="submit" value="Search" />
+</form>
+
+
+<form method="get" class="mb-3">
+    <select name="searchColumn">
+        <option value="medallion">Medallion</option>
+        <option value="hashLicense">Hash License</option>
+        <option value="pickupTime">Pickup Time</option>
+        <option value="dropOffTime">DropOff Time</option>
+        <option value="duration">Duration</option>
+        <option value="distance">Distance</option>
+        <option value="pLongitude">pLongitude</option>
+        <option value="pLatitude">pLatitude</option>
+        <option value="dLongitude">dLongitude</option>
+        <option value="dLatitude">dLatitude</option>
+        <option value="paymentType">Payment Type</option>
+        <option value="fareAmount">Fare Amount</option>
+        <option value="surchange">Surchange</option>
+        <option value="tax">Tax</option>
+        <option value="tipAmount">Tip Amount</option>
+        <option value="tollsAmount">Tolls Amount</option>
+        <option value="totalAmount">Total Amount</option>
+    </select>
+    <input type="text" name="searchText" placeholder="Search..." value="@Context.Request.Query["searchText"]" />
+    <input type="submit" value="Search" />
+</form>
+
+
+
+<div class="mb-3">
+    <a class="btn btn-success" href="@Url.Action("ExportCsv", new{
+        sortColumn = ViewBag.SortColumn,
+        sortOrder = ViewBag.SortOrder,
+        searchString = Context.Request.Query["searchString"],
+        searchColumn = Context.Request.Query["searchColumn"],
+        searchText = Context.Request.Query["searchText"]
+})">Export CSV</a>
+</div>
+
+<div class="mb-3">
+    <a class="btn btn-primary" href="@Url.Action("ExportExcel", new{
+        sortColumn = ViewBag.SortColumn,
+        sortOrder = ViewBag.SortOrder,
+        searchString = Context.Request.Query["searchString"],
+        searchColumn = Context.Request.Query["searchColumn"],
+        searchText = Context.Request.Query["searchText"]
+    })">Export Excel</a>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            @{
+                string[] columns = new string[]
+                {
+                     "medallion","hashLicense","pickupTime","dropOffTime","duration","distance",
+                    "pLongitude","pLatitude","dLongitude","dLatitude","paymentType","fareAmount",
+                    "surchange","tax","tipAmount","tollsAmount","totalAmount"
+                };
+
+                string[] headers = new string[]
+                {
+                     "Medallion","Hash License","Pickup Time","DropOff Time","Duration","Distance",
+                    "pLongitude","pLatitude","dLongitude","dLatitude","Payment Type","Fare Amount",
+                    "Surchange","Tax","Tip Amount","Tolls Amount","Total Amount"
+                };
+            }
+            @for(int i=0;i<columns.Length;i++)
+            {
+                var col = columns[i];
+                var header = headers[i];
+                string arrow = "";
+
+                if(ViewBag.SortColumn == col)
+                {
+                    arrow = ViewBag.SortOrder == "asc" ? "▲" : "▼";
+                    
+                }
+
+                <th>
+                    <a href="@Url.Action("Index", new{
+                        page =1, 
+                        pageSize = ViewBag.PageSize, 
+                        sortColumn = col, 
+                        sortOrder = ViewBag.SortColumn == col && ViewBag.SortOrder == "asc" ? "desc" : "asc",
+                        searchString = Context.Request.Query["searchString"]
+                        })">@header @arrow</a>
+                </th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.medallion</td>
+                <td>@item.hashLicense</td>
+                <td>@item.pickupTime?.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@item.dropOffTime?.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@item.duration</td>
+                <td>@item.distance</td>
+                <td>@item.pLongitude</td>
+                <td>@item.pLatitude</td>
+                <td>@item.dLongitude</td>
+                <td>@item.dLatitude</td>
+                <td>@item.paymentType</td>
+                <td>@item.fareAmount</td>
+                <td>@item.surchange</td>
+                <td>@item.tax</td>
+                <td>@item.tipAmount</td>
+                <td>@item.tollsAmount</td>
+                <td>@item.totalAmount</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<div class="mt-3">
+
+    <div class="pagination">
+
+   
+        @if (ViewBag.CurrentPage > 1)
+        {
+            <a href="@Url.Action("Index", new { 
+                page = 1,
+                pageSize = ViewBag.PageSize,
+                sortColumn = ViewBag.SortColumn,
+                sortOrder = ViewBag.SortOrder,
+                searchString = Context.Request.Query["searchString"],
+                searchColumn = Context.Request.Query["searchColumn"],
+                searchText = Context.Request.Query["searchText"]})">First | </a>
+        }
+        
+        @if (ViewBag.CurrentPage > 1)
+        {
+            <a href="@Url.Action("Index", new {
+                page = ViewBag.CurrentPage - 1, 
+                pageSize = ViewBag.PageSize,
+                sortColumn = ViewBag.SortColumn,
+                sortOrder =ViewBag.SortOrder,
+                searchString = Context.Request.Query["searchString"],
+                searchColumn = Context.Request.Query["searchColumn"],
+                searchText = Context.Request.Query["searchText"]})">Previous</a>
+        }
+
+        @{
+            int totalPages = ViewBag.TotalPages;
+            int currentPage = ViewBag.CurrentPage;
+
+            int start = Math.Max(1, currentPage - 2);
+            int end = Math.Min(totalPages, currentPage + 2);
+        }
+
+        @for(int i = start; i <= end; i++)
+        {
+            if(i==currentPage)
+            {
+                <span style="font-weight:bold; padding:5px;">@i</span>
+            }
+            else
+            {
+                <a href="@Url.Action("Index", new {
+                    page = i, 
+                    pageSize = ViewBag.PageSize,
+                    sortColumn = ViewBag.SortColumn,
+                    sortOrder = ViewBag.SortOrder,
+                    searchString = Context.Request.Query["searchString"],
+                    searchColumn = Context.Request.Query["searchColumn"],
+                    searchText = Context.Request.Query["searchText"]
+                })" style="padding:5px;">@i</a>
+            }
+        }
+       
+
+        @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+        {
+            <a href="@Url.Action("Index", new { 
+            page = ViewBag.CurrentPage + 1,
+            pageSize = ViewBag.PageSize,
+            sortColumn = ViewBag.SortColumn,
+            sortOrder = ViewBag.SortOrder,
+            searchString = Context.Request.Query["searchString"],
+            searchColumn = Context.Request.Query["searchColumn"],
+            searchText = Context.Request.Query["searchText"]})">Next | </a>
+        }
+
+        @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+        {
+            <a href="@Url.Action("Index", new{
+                page = ViewBag.TotalPages,
+                pageSize = ViewBag.PageSize,
+                sortColumn = ViewBag.SortColumn,
+                sortOrder = ViewBag.SortOrder,
+                searchString = Context.Request.Query["searchString"],
+                searchColumn = Context.Request.Query["searchColumn"],
+                searchText = Context.Request.Query["searchText"]})">Last</a>
+
+        }
+    </div>
+</div>
