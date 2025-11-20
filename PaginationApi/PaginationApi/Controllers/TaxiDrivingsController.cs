@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using OfficeOpenXml;
@@ -65,10 +66,28 @@ namespace PaginationApi.Controllers
             return View(pagedData);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Edit(string medallion, string hashLicense, short duration, double distance, TaxiDrivings model)
+        public async Task<IActionResult> Edit(int? id)
         {
-            if (medallion != model.medallion || hashLicense != model.hashLicense || duration != model.duration || distance != model.distance)
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var result = await _context.TaxiDrivings.FindAsync(id);
+            
+            if(result == null)
+            {
+                return NotFound();
+            }
+
+            return View(result);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, TaxiDrivings model)
+        {
+            if (id != model.id)
             {
                 return BadRequest();
             }
@@ -77,12 +96,38 @@ namespace PaginationApi.Controllers
             {
                 try
                 {
-                    _context.Update(model);
+                    var existingEntity = await _context.TaxiDrivings.FindAsync(id);
+
+                    if (existingEntity == null)
+                    {
+                        return NotFound();
+                    }
+
+                    existingEntity.medallion = model.medallion;
+                    existingEntity.hashLicense = model.hashLicense;
+                    existingEntity.pickupTime = model.pickupTime;
+                    existingEntity.dropOffTime = model.dropOffTime;
+                    existingEntity.duration = model.duration;
+                    existingEntity.distance = model.distance;
+                    existingEntity.pLongitude = model.pLongitude;
+                    existingEntity.pLatitude = model.pLatitude;
+                    existingEntity.dLongitude = model.dLongitude;
+                    existingEntity.dLatitude = model.dLatitude;
+                    existingEntity.paymentType = model.paymentType;
+                    existingEntity.fareAmount = model.fareAmount;
+                    existingEntity.surchange = model.surchange;
+                    existingEntity.tax = model.tax;
+                    existingEntity.tipAmount = model.tipAmount;
+                    existingEntity.tollsAmount = model.tollsAmount;
+                    existingEntity.totalAmount = model.totalAmount;
+
+                    _context.Entry(existingEntity).State = EntityState.Modified;
+
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TaxiExists(medallion, hashLicense, duration, distance))
+                    if (!TaxiExists(model.id))
                     {
                         return NotFound();
                     }
@@ -94,14 +139,41 @@ namespace PaginationApi.Controllers
             return View(model);
         }
 
-        private bool TaxiExists(string medallion, string hashLicense, short duration, double distance)
-        {
-            return _context.TaxiDrivings.Any(t=>t.medallion == medallion 
-                                                && t.hashLicense == hashLicense
-                                                && t.duration == duration
-                                                && t.distance == distance);
+        private bool TaxiExists(int id) { 
+            return _context.TaxiDrivings.Any(t=>t.id == id);
         }
 
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var result = await _context.TaxiDrivings.FindAsync(id);
+
+            if(result == null)
+            {
+                return NotFound();
+            }
+
+            return View(result);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var result = await _context.TaxiDrivings.FindAsync(id);
+            if (result != null)
+            {
+                _context.TaxiDrivings.Remove(result);
+                await _context.SaveChangesAsync();
+            }
+            
+            
+            return RedirectToAction(nameof(Index));
+        }
+       
         public IActionResult ExportCsv(
             string? sortColumn,
             string? sortOrder,

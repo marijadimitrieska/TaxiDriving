@@ -6,6 +6,8 @@ using PaginationApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("TaxiDB") ?? throw new InvalidOperationException("Connection string 'TaxiDB' not found.");
 
@@ -20,8 +22,38 @@ builder.Services.AddControllersWithViews();
 builder.Services.Configure<PaginationSettings>(
     builder.Configuration.GetSection("Pagination"));
 
+builder.WebHost.ConfigureKestrel((context, options) =>
+{
+    options.Configure(context.Configuration.GetSection("Kestrel"));
+});
+
 var app = builder.Build();
 
+using var scope = app.Services.CreateScope();
+
+using (scope)
+{
+    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    context.Database.Migrate();
+
+    var nullCount = context.TaxiDrivings.Count(r => r.createdDate == null
+                                                || r.updatedDate == null);
+
+    if (nullCount > 0)
+    {
+        Console.WriteLine($"Updating {nullCount} records with null dates...");
+
+        context.Database.ExecuteSqlRaw(@"
+        UPDATE data_small
+        SET createdDate = COALESCE(createdDate, GETDATE()),
+            updatedDate = COALESCE(updatedDate, GETDATE())
+        WHERE createdDate IS NULL OR updatedDate IS NULL");
+
+        Console.WriteLine("Update complete!");
+    }
+
+    context.SaveChangesAsync();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

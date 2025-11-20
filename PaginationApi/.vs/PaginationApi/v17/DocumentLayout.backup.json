@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\views\\taxidrivings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\views\\taxidrivings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\controllers\\taxidrivingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\controllers\\taxidrivingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\data\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\data\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\views\\taxidrivings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\views\\taxidrivings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\models\\taxidrivings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\models\\taxidrivings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\models\\paginationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\models\\paginationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\views\\taxidrivings\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\views\\taxidrivings\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\controllers\\taxidrivingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\controllers\\taxidrivingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\views\\taxidrivings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\views\\taxidrivings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\models\\paginationparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +57,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Data\\Migrations\\20251118153146_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PaginationApi\\Data\\Migrations\\20251118153146_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\migrations\\20251120140711_init1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\migrations\\20251120140711_init1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|c:\\users\\marijad\\source\\repos\\paginationapi\\paginationapi\\migrations\\20251120143029_addedcreatedandupdateddate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{779BBC41-7BEF-405D-BE0F-94E6C46E1AE3}|PaginationApi\\PaginationApi.csproj|solutionrelative:paginationapi\\migrations\\20251120143029_addedcreatedandupdateddate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,85 +74,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Program.cs",
-              "RelativeDocumentMoniker": "PaginationApi\\Program.cs",
-              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Program.cs",
-              "RelativeToolTip": "PaginationApi\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAMwAwAAAAkAAAAAAAAAA==",
+              "Title": "DatabaseSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Data\\DatabaseSeeder.cs",
+              "RelativeDocumentMoniker": "PaginationApi\\Data\\DatabaseSeeder.cs",
+              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Data\\DatabaseSeeder.cs",
+              "RelativeToolTip": "PaginationApi\\Data\\DatabaseSeeder.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwB0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:22:38.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TaxiDrivingsController.cs",
-              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Controllers\\TaxiDrivingsController.cs",
-              "RelativeDocumentMoniker": "PaginationApi\\Controllers\\TaxiDrivingsController.cs",
-              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Controllers\\TaxiDrivingsController.cs*",
-              "RelativeToolTip": "PaginationApi\\Controllers\\TaxiDrivingsController.cs*",
-              "ViewState": "AgIAACsAAAAAAAAAAAAIwD8AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T14:22:55.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T13:48:27.515Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Views\\TaxiDrivings\\Index.cshtml",
-              "RelativeDocumentMoniker": "PaginationApi\\Views\\TaxiDrivings\\Index.cshtml",
-              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Views\\TaxiDrivings\\Index.cshtml*",
-              "RelativeToolTip": "PaginationApi\\Views\\TaxiDrivings\\Index.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-18T14:44:40.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\appsettings.json",
               "RelativeDocumentMoniker": "PaginationApi\\appsettings.json",
               "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\appsettings.json",
               "RelativeToolTip": "PaginationApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAABAMzMzM7MSwAcAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowA8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-11-18T15:21:04.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Program.cs",
+              "RelativeDocumentMoniker": "PaginationApi\\Program.cs",
+              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Program.cs",
+              "RelativeToolTip": "PaginationApi\\Program.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAWwEYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:22:38.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20251120143029_AddedCreatedAndUpdatedDate.cs",
+              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Migrations\\20251120143029_AddedCreatedAndUpdatedDate.cs",
+              "RelativeDocumentMoniker": "PaginationApi\\Migrations\\20251120143029_AddedCreatedAndUpdatedDate.cs",
+              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Migrations\\20251120143029_AddedCreatedAndUpdatedDate.cs",
+              "RelativeToolTip": "PaginationApi\\Migrations\\20251120143029_AddedCreatedAndUpdatedDate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T14:30:29.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20251120140711_Init1.cs",
+              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Migrations\\20251120140711_Init1.cs",
+              "RelativeDocumentMoniker": "PaginationApi\\Migrations\\20251120140711_Init1.cs",
+              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Migrations\\20251120140711_Init1.cs",
+              "RelativeToolTip": "PaginationApi\\Migrations\\20251120140711_Init1.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T14:07:11.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "TaxiDrivings.cs",
               "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Models\\TaxiDrivings.cs",
               "RelativeDocumentMoniker": "PaginationApi\\Models\\TaxiDrivings.cs",
               "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Models\\TaxiDrivings.cs",
               "RelativeToolTip": "PaginationApi\\Models\\TaxiDrivings.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T14:31:55.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T14:05:34.025Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PaginationParams.cs",
-              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Models\\PaginationParams.cs",
-              "RelativeDocumentMoniker": "PaginationApi\\Models\\PaginationParams.cs",
-              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Models\\PaginationParams.cs",
-              "RelativeToolTip": "PaginationApi\\Models\\PaginationParams.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA1wBEAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "TaxiDrivingsController.cs",
+              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Controllers\\TaxiDrivingsController.cs",
+              "RelativeDocumentMoniker": "PaginationApi\\Controllers\\TaxiDrivingsController.cs",
+              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Controllers\\TaxiDrivingsController.cs",
+              "RelativeToolTip": "PaginationApi\\Controllers\\TaxiDrivingsController.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAYwKYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T08:10:28.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T14:22:55.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Views\\TaxiDrivings\\Index.cshtml",
+              "RelativeDocumentMoniker": "PaginationApi\\Views\\TaxiDrivings\\Index.cshtml",
+              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Views\\TaxiDrivings\\Index.cshtml",
+              "RelativeToolTip": "PaginationApi\\Views\\TaxiDrivings\\Index.cshtml",
+              "ViewState": "AgIAAIMAAAAAAAAAAAD4v44AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-18T14:44:40.438Z"
             },
             {
               "$type": "Document",
@@ -132,12 +184,83 @@
               "RelativeToolTip": "PaginationApi\\Models\\PaginationSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T08:14:45.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T08:14:45.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Views\\TaxiDrivings\\Delete.cshtml",
+              "RelativeDocumentMoniker": "PaginationApi\\Views\\TaxiDrivings\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Views\\TaxiDrivings\\Delete.cshtml",
+              "RelativeToolTip": "PaginationApi\\Views\\TaxiDrivings\\Delete.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T13:09:45.154Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "PaginationApi\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "PaginationApi\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwBwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T08:45:30.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PaginationApi\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PaginationApi\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T13:53:09.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "PaginationApi\\Models\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "PaginationApi\\Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T12:05:03.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Views\\TaxiDrivings\\Edit.cshtml",
+              "RelativeDocumentMoniker": "PaginationApi\\Views\\TaxiDrivings\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Views\\TaxiDrivings\\Edit.cshtml",
+              "RelativeToolTip": "PaginationApi\\Views\\TaxiDrivings\\Edit.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T08:01:22.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PaginationParams.cs",
+              "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Models\\PaginationParams.cs",
+              "RelativeDocumentMoniker": "PaginationApi\\Models\\PaginationParams.cs",
+              "ToolTip": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Models\\PaginationParams.cs",
+              "RelativeToolTip": "PaginationApi\\Models\\PaginationParams.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA1wBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T08:10:28.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "20251118153146_initial.cs",
               "DocumentMoniker": "C:\\Users\\marijad\\source\\repos\\PaginationApi\\PaginationApi\\Data\\Migrations\\20251118153146_initial.cs",
               "RelativeDocumentMoniker": "PaginationApi\\Data\\Migrations\\20251118153146_initial.cs",

@@ -1,0 +1,27 @@
+﻿@model PaginationApi.Models.TaxiDrivings
+
+<h2>Are you sure you want to delete this record?</h2>
+
+<p>Medallion: @Model.medallion</p>
+<p>Hash License: @Model.medallion</p>
+<p>Pickup Time: @Model.pickupTime</p>
+<p>Dropoff Time: @Model.dropOffTime</p>
+<p>Duration: @Model.duration</p>
+<p>Distance: @Model.distance</p>
+<p>pLongitude: @Model.pLongitude</p>
+<p>pLatitude: @Model.pLatitude</p>
+<p>dLongitude: @Model.dLongitude</p>
+<p>dLatitude: @Model.dLatitude</p>
+<p>Payment Type: @Model.paymentType</p>
+<p>Fare Amount: @Model.fareAmount</p>
+<p>Surchange: @Model.surchange</p>
+<p>Tax: @Model.tax</p>
+<p>Tip Amount: @Model.tipAmount</p>
+<p>Tolls Amount: @Model.tollsAmount</p>
+<p>Total Amount: @Model.totalAmount</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="id" />
+    <button type="submit" class="btn btn-success">Yes</button>
+    <a asp-action="Index" class="btn btn-danger" autofocus>No</a>
+</form>

@@ -4,9 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace PaginationApi.Models
 {
     [Table("data_small")]
-    public class TaxiDrivings
+    public class TaxiDrivings : BaseEntity
     {
-       
+        [Key]
+       public int id { get; set; }
        public string? medallion { get; set; }
        public string? hashLicense { get; set; }
        public DateTime? pickupTime { get; set; }
@@ -24,5 +25,8 @@ namespace PaginationApi.Models
        public double? tipAmount { get; set; }
        public double? tollsAmount { get; set; }
        public double? totalAmount { get; set; }
+      
+
+
     }
 }

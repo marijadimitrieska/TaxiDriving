@@ -83,14 +83,14 @@
                 {
                      "medallion","hashLicense","pickupTime","dropOffTime","duration","distance",
                     "pLongitude","pLatitude","dLongitude","dLatitude","paymentType","fareAmount",
-                    "surchange","tax","tipAmount","tollsAmount","totalAmount"
+                    "surchange","tax","tipAmount","tollsAmount","totalAmount", "CreatedDate", "UpdatedDate"
                 };
 
                 string[] headers = new string[]
                 {
                      "Medallion","Hash License","Pickup Time","DropOff Time","Duration","Distance",
                     "pLongitude","pLatitude","dLongitude","dLatitude","Payment Type","Fare Amount",
-                    "Surchange","Tax","Tip Amount","Tolls Amount","Total Amount"
+                    "Surchange","Tax","Tip Amount","Tolls Amount","Total Amount", "Created Date", "Updated Date"
                 };
             }
             @for(int i=0;i<columns.Length;i++)
@@ -115,6 +115,7 @@
                         })">@header @arrow</a>
                 </th>
             }
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -138,6 +139,12 @@
                 <td>@item.tipAmount</td>
                 <td>@item.tollsAmount</td>
                 <td>@item.totalAmount</td>
+                <td>@item.createdDate</td>
+                <td>@item.updatedDate</td> 
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.id">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                </td>
             </tr>
         }
     </tbody>

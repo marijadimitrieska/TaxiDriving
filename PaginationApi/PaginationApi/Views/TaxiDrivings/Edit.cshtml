@@ -1,0 +1,119 @@
+﻿@model PaginationApi.Models.TaxiDrivings
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Movie</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+            <div class="form-group">
+                <label asp-for="medallion" class="control-label"></label>
+                <input asp-for="medallion" class="form-control" />
+                <span asp-validation-for="medallion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="hashLicense" class="control-label"></label>
+                <input asp-for="hashLicense" class="form-control" />
+                <span asp-validation-for="hashLicense" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pickupTime" class="control-label"></label>
+                <input asp-for="pickupTime" class="form-control" />
+                <span asp-validation-for="medallion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dropOffTime" class="control-label"></label>
+                <input asp-for="dropOffTime" class="form-control" />
+                <span asp-validation-for="dropOffTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="duration" class="control-label"></label>
+                <input asp-for="duration" class="form-control" />
+                <span asp-validation-for="duration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="distance" class="control-label"></label>
+                <input asp-for="distance" class="form-control" />
+                <span asp-validation-for="distance" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="pLongitude" class="control-label"></label>
+                <input asp-for="pLongitude" class="form-control" />
+                <span asp-validation-for="pLongitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pLatitude" class="control-label"></label>
+                <input asp-for="pLatitude" class="form-control" />
+                <span asp-validation-for="pLatitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dLongitude" class="control-label"></label>
+                <input asp-for="dLongitude" class="form-control" />
+                <span asp-validation-for="dLongitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dLatitude" class="control-label"></label>
+                <input asp-for="dLatitude" class="form-control" />
+                <span asp-validation-for="dLatitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="paymentType" class="control-label"></label>
+                <input asp-for="paymentType" class="form-control" />
+                <span asp-validation-for="paymentType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fareAmount" class="control-label"></label>
+                <input asp-for="fareAmount" class="form-control" />
+                <span asp-validation-for="fareAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="surchange" class="control-label"></label>
+                <input asp-for="surchange" class="form-control" />
+                <span asp-validation-for="surchange" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tax" class="control-label"></label>
+                <input asp-for="tax" class="form-control" />
+                <span asp-validation-for="tax" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tipAmount" class="control-label"></label>
+                <input asp-for="tipAmount" class="form-control" />
+                <span asp-validation-for="tipAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tollsAmount" class="control-label"></label>
+                <input asp-for="tollsAmount" class="form-control" />
+                <span asp-validation-for="tollsAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="totalAmount" class="control-label"></label>
+                <input asp-for="totalAmount" class="form-control" />
+                <span asp-validation-for="totalAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+
+    
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts{
+@{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
